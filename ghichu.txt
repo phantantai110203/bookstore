@@ -1,0 +1,26 @@
+B1:tao database trong mysql tên là bookstore
+ mở terminal
+ chay câu lệnh
+php artisan migrate:fresh
+sau đó tạo file seeder
+chạy file seeder
+
+INSERT INTO `books` (`id`, `name`, `description`, `publish_date`, `price`, `quality`,`img`, `created_at`, `updated_at`,`deleted_at`,`author_id`,`categories_id`) VALUES
+(1, 'You Can Win - Bí Quyết Của Người Chiến Thắng (Tái Bản)', 'You Can Win - Bí Quyết Của Người Chiến Thắng .Với cách đặt vấn đề dễ hiểu, thiết thực và sâu sắc, <strong>Bí quyết của người chiến thắng sẽ giúp bạn tránh rơi vào cảm giác mất phương hướng, biết xác định mục tiêu và những giá trị cần ưu tiên trong cuộc sống. Có  thể xem cuốn sách này như một quyển sổ tay liệt kê những công cụ cần  thiết để kiến tao thành công và giúp bạn tạo lập một cuộc sống tốt đẹp.  Cũng có thể xem nó như một cuốn cảm nang dạy nấu ăn, bao gồm những chỉ  dần về nguyên liệu, công thức và cách pha trộn theo tỉ lệ thích hợp để  có được thành công. Nhưng  trên hết, đây là cuốn sách từng bước dẫn dặt bạn đi từ mơ ước, khát vọng  thành công đến khám phá năng lực của bản thân và biến ước mơ thành hiện  thực .Bí  quyết sẽ giúp bạn xây dựng mục tiêu mới, hình thành ý niệm mới về mục  đích sống, phát triển tư tưởng mới về bản thân và tương lai. Một  trong những mục đích của cuốn sách là giúp bạn đề ra kế hoạch hành động  cho tương lai. Nếu chưa bao giờ làm vậy, bạn hãy xác định xem- Bạn muốn đạt được điều gì? - Bạn muốn đạt được mục tiêu bằng cách nào?- Thời điểm bạn muốn đạt được mục tiêu là khi nào? Những  nguyên tắc trình bày trong cuốn sách đều mang tính phổ quát, áp dụng cho  mọi tình huống, tổ chức hoặc quốc gia. Hy vọng cuốn sách sẽ mang lại  cho bạn nhiều điều mới mẻ v&agragrave; những khám phá thú vị.', '2015-12-14', 120000, 86,'hinh1.jpg', '2023-12-12 14:40:25', '2023-12-12 14:40:25',NULL,1,1)
+
+INSERT INTO `authors` (`id`, `name`, `DateOfBirth`, `InfoAuthor`,`created_at`, `updated_at`,`deleted_at`) VALUES
+(2, 'Aoyama Gosho','1963-06-21','Aoyama Gosho từ lúc còn trẻ đã là một người vẽ rất giỏi. Khi còn học ở trường cấp 2, Aoyama đã từng đoạt giải nhất một cuộc thi vẽ tranh với bức vẽ mang tên "Cuộc chiến Yukiai", và bức tranh này đã được trưng bày tại cửa hàng Daimaru ở Tottori, quê hương của ông. Ông tốt nghiệp trường cấp ba Ikuei. Sau đó, ông theo học ngành Mỹ thuật tại trường Đại học Nhật Bản','2023-12-12 14:40:25', '2023-12-12 14:40:25',NULL)
+
+INSERT INTO `categories` (`id`, `name`, `description`,`created_at`, `updated_at`,`deleted_at`) VALUES
+(1,'Kỹ năng sống','Sách Kỹ năng sống là tập hợp các hành vi tích cực và khả năng thích nghi cho phép mỗi cá nhân đối phó hiệu quả với các nhu cầu và thách thức của cuộc sống hàng ngày','2017-05-27 14:40:25', '2017-05-27 14:40:25',NULL)
+
+
+
+
+
+
+
+
+
+
+
