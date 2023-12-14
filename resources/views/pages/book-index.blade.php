@@ -78,20 +78,20 @@
 
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <a href="#" class="btn btn-primary stretched-link"><i
-                                    className="fas fa-shopping-cart"></i> Mua
+                            <a href="#" class="btn btn-primary stretched-link"><i class="fa fa-shopping-cart"></i>
+                                Mua
                                 ngay
                             </a>
                         </div>
                     </div>
-                    @else
-                    @break
-                @endif
-            @endforeach
-        </div>
-
-
+                @else
+                @break
+            @endif
+        @endforeach
     </div>
+
+
+</div>
 </div>
 </div>
 </div>
