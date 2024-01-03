@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Trang chu')
 
 @section('header')
     @parent
@@ -61,7 +61,7 @@
                             <a class="nav-link" href="#">Sách khoa học</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Sản phẩm khác</a>
+                            <a class="nav-link active" href="#">Sách khác</a>
                         </li>
                     </ul>
                 </div>
