@@ -11,12 +11,31 @@ class Book extends Model
     use HasFactory;
     use SoftDeletes;
     protected $guarded = [];
-    public function Categorie()
-    {
-        return $this->belongsTo(Categorie::class);
+    // khóa ngoại
+    public function Category(){
+        return $this->belongsTo(Category::class);
     }
-    public function Author()
-    {
+    public function Author(){
         return $this->belongsTo(Author::class);
     }
+    public function carts(){
+        return $this->hasMany(Cart::class);
+    }
+    public function comments(){
+        return $this->hasMany(Comment::class);
+    }
+    public function favoritebooks(){
+        return $this->hasMany(Favoritebook::class);
+    }
+    public function images(){
+        return $this->hasMany(Image::class);
+    }
+    public function invoiceDetails(){
+        return $this->hasMany(InvoiceDetail::class);
+    }
+    public function reviews(){
+        return $this->hasMany(Review::class);
+    }
+
+
 }

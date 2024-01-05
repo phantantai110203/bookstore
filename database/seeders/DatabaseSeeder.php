@@ -6,8 +6,6 @@ namespace Database\Seeders;
 
 use DateTime;
 use Illuminate\Database\Seeder;
-
-
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
@@ -20,7 +18,7 @@ class DatabaseSeeder extends Seeder
     {
         DB::table('users')->insert([
             [
-                'name' => 'Tài Phan',
+                'name' => 'taiphan',
                 'email' => 'ptai0866@gmail.com',
                 'password' => Hash::make('123456'),
                 'phone' => '0344312253',
@@ -31,7 +29,7 @@ class DatabaseSeeder extends Seeder
 
             ],
             [
-                'name' => 'Quang Nam',
+                'name' => 'quangnam',
                 'email' => 'quangnam@gmail.com',
                 'password' => Hash::make('123456'),
                 'phone' => '0344312254',
@@ -42,7 +40,7 @@ class DatabaseSeeder extends Seeder
 
             ],
             [
-                'name' => 'Quốc Việt',
+                'name' => 'quocviet',
                 'email' => 'quocviet@gmail.com',
                 'password' => Hash::make('123456'),
                 'phone' => '0344312255',
@@ -50,16 +48,21 @@ class DatabaseSeeder extends Seeder
                 'role' => 1,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime()
-
             ],
-        
         ]);
+
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call([
+            CategorySeeder::class,
+            AuthorSeeder::class,
+            BookSeeder::class,
+            CartSeeder::class,
+         ]);
     }
 
 }

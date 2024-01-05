@@ -18,7 +18,7 @@ return new class extends Migration
             $table->date('publish_date')->nullable();
             $table->bigInteger('price')->nullable();
             $table->integer('quality')->nullable()->default(0);
-            $table->string('img',100)->nullable();
+            $table->text('image')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
