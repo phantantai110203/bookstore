@@ -1,0 +1,32 @@
+/* ẩn bớt chữ thẻ p  */
+.hide-less{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+/* chỉnh vị trí nút button */
+.custom-btn {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+/* chỉnh kích thức thẻ card */
+.size-card{
+    width: 240px;
+    height: 390px;
+}
+/* chỉnh kích thức thẻ img */
+.size-img{
+    height: 238px;
+}
+
+.row-align{
+    margin-top: 60px;
+}
+
+.col-align{
+    padding-top: 6px;
+}

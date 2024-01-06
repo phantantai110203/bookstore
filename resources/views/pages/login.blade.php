@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Đăng nhập</title>
     {{-- <link rel="stylesheet" href="csstaba/css/login.css"> --}}
-    <link rel="icon" href="csslogin/images/logo.png" type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/logo-sach1.jpg') }}" type="image/x-icon">
     <link href="csslogin/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- Style -->

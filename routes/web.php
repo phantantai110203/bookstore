@@ -40,7 +40,7 @@ Route::get('/login', [LoginController::class, 'showForm'])->name('login');
 Route::post('login', [LoginController::class, 'authenticate'])->name('login');
 Route::get('register', [LoginController::class, 'register']);
 Route::post('register', [LoginController::class, 'postregister'])->name('register');
-Route::resource('/book-index', BookController::class)->only(['index']);
+Route::resource('/', BookController::class)->only(['index']);
 
 
 
@@ -49,7 +49,7 @@ Route::fallback(function () {
     return view('pages.404');
 });
 
-Route::get('/', function () {
-    //return view('welcome');
-    return view('pages.home');
-});
+// Route::get('/', function () {
+//     //return view('welcome');
+//     return view('pages.home');
+// });

@@ -15,7 +15,7 @@ class BookController extends Controller
     public function index()
     {
         $lst = Book::all();
-        return view('pages.book-index', ['lst' => $lst]);
+        return view('pages.home', ['lst' => $lst]);
         //
     }
 
